@@ -72,5 +72,20 @@
     "consumerKey": "{twitter-consumer-key}",
     "consumerSecret": "{twitter-consumer-secret}",
     "failureFlash": true
+  },
+  "auth0": {
+    "provider": "auth0",
+    "module": "passport-auth0",
+    "domain" : "smashtaps-localhost.auth0.com",
+    "strategy": "Auth0Strategy",
+    "clientID": "LKMuwzG42zG4cTZRnQ9mby2RQJg2Sqfs",
+    "clientSecret": "vXWY_U-W12a-hc6WfmTE9_ZOXwA_s4iUGFolWcgLWKpWCMUA8WzQK16LPHbbXYjI",
+    "callbackURL": "/auth/auth0/callback",
+    "authPath": "/auth/auth0",
+    "callbackPath": "/auth/auth0/callback",
+    "successRedirect": "/auth/account",
+    "failureRedirect": "/login",
+    "scope": ["email", "profile"],
+    "failureFlash": true
   }
 }
